@@ -1,20 +1,16 @@
-# 🧠 DSA Journey: From Beginner ➡️ Advanced 🚀
+# ☕ DSA Journey with Java: From Beginner ➡️ Advanced 🚀
 
 ![DSA Banner](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif)
 
-> “Data Structures and Algorithms are the backbone of every great programmer.” – *Anonymous*
+> “The only way to learn to program is by writing programs.” – *Dennis Ritchie*
 
 ---
 
-## 📘 About This Repository
+## 🧩 About This Repository
 
-This repository documents my complete **DSA Learning Journey**, from understanding basic arrays to mastering complex algorithms.
-Here you’ll find:
-
-* 🧩 Topic-wise solutions
-* 🧮 Notes & explanations
-* 💡 Problem-solving patterns
-* 📊 Practice stats from multiple coding platforms
+Welcome to my **Data Structures & Algorithms (DSA)** journey — powered by **Java** 💻
+This repository tracks my learning path from understanding the basics to solving advanced competitive programming challenges.
+I’m using platforms like **GeeksforGeeks**, **LeetCode**, **CodeChef**, **CodeStudio**, and **HackerRank** to sharpen my problem-solving skills.
 
 ---
 
@@ -30,69 +26,99 @@ Here you’ll find:
 
 ---
 
-## 📊 My Progress Overview
+## 📘 Tech Stack
 
-| Level               | Topics Covered                                    | Status         |
-| :------------------ | :------------------------------------------------ | :------------- |
-| 🌱 **Beginner**     | Arrays, Strings, Loops, Recursion                 | ✅ Completed    |
-| ⚙️ **Intermediate** | Linked Lists, Stacks, Queues, Searching, Sorting  | 🟢 In Progress |
-| 🧩 **Advanced**     | Trees, Graphs, DP, Backtracking, Bit Manipulation | 🟡 Learning    |
-| 🏆 **Competitive**  | Problem Solving, Contests, Optimization           | 🔵 Ongoing     |
-
----
-
-## 📈 Practice & Stats
-
-![Ujjwal’s GitHub Stats](https://github-readme-stats.vercel.app/api?username=ujjwals2606\&show_icons=true\&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ujjwals2606\&layout=compact\&theme=radical)
+| Category               | Tools                                                   |
+| :--------------------- | :------------------------------------------------------ |
+| ☕ **Language**         | Java                                                    |
+| 🧠 **IDE**             | IntelliJ IDEA, Eclipse, VS Code                         |
+| ⚙️ **Build Tool**      | Maven / Gradle                                          |
+| 🧩 **Data Structures** | Arrays, LinkedList, Stack, Queue, Tree, Graph           |
+| 🧮 **Algorithms**      | Sorting, Searching, DP, Backtracking, Greedy, Recursion |
 
 ---
 
-## 📚 DSA Topics Covered
+## 📊 My Learning Roadmap
+
+| Level               | Concepts                                         | Progress       |
+| :------------------ | :----------------------------------------------- | :------------- |
+| 🌱 **Beginner**     | Java Syntax, Arrays, Strings, Loops              | ✅ Completed    |
+| ⚙️ **Intermediate** | OOPs, LinkedList, Stack, Queue, Searching        | 🟢 In Progress |
+| 🧠 **Advanced**     | Trees, Graphs, Dynamic Programming, Backtracking | 🟡 Learning    |
+| 🏆 **Competitive**  | Time Complexity, Contests, Optimization          | 🔵 Ongoing     |
+
+---
+
+## 🔥 Progress Visualization
+
+![Ujjwal’s GitHub Stats](https://github-readme-stats.vercel.app/api?username=ujjwals2606\&show_icons=true\&theme=tokyonight\&title_color=FFD700)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ujjwals2606\&layout=compact\&theme=tokyonight)
+
+---
+
+## 🧠 Topics Covered
 
 ### 🧩 Data Structures
 
 * Arrays & Strings
-* Linked List (Singly, Doubly, Circular)
-* Stacks & Queues
+* Linked Lists (Singly, Doubly, Circular)
+* Stack & Queue
 * Trees & Binary Search Trees
 * Heaps & Priority Queues
-* Graphs (BFS, DFS, Dijkstra, Topological Sort)
-* HashMaps & Sets
+* Graphs (BFS, DFS, Dijkstra)
+* HashMap, Set, and Collections Framework
 
 ### ⚙️ Algorithms
 
-* Searching & Sorting
+* Sorting & Searching
 * Recursion & Backtracking
-* Greedy Algorithms
 * Divide and Conquer
+* Greedy Algorithms
 * Dynamic Programming
+* Sliding Window & Two Pointer
 * Bit Manipulation
 
 ---
 
-## 🎯 My Goals
+## 🧮 Example Java Code
 
-* [x] Complete 100+ problems on GeeksforGeeks
-* [x] Solve 150+ problems on LeetCode
-* [ ] Reach 3⭐ on CodeChef
-* [ ] Master Dynamic Programming
-* [ ] Participate in 10+ live contests
-* [ ] Contribute DSA solutions to open-source repos
+```java
+// Example: Binary Search in Java
+public class BinarySearch {
+    public static int search(int[] arr, int target) {
+        int left = 0, right = arr.length - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (arr[mid] == target)
+                return mid;
+            else if (arr[mid] < target)
+                left = mid + 1;
+            else
+                right = mid - 1;
+        }
+        return -1;
+    }
+    public static void main(String[] args) {
+        int[] nums = {2, 4, 6, 8, 10};
+        int index = search(nums, 8);
+        System.out.println("Element found at index: " + index);
+    }
+}
+```
 
 ---
 
 ## 🏗️ Repository Structure
 
 ```
-DSA-Journey/
+DSA-Java/
 │
 ├── Arrays/
 │   ├── Easy/
 │   ├── Medium/
 │   └── Hard/
 │
-├── LinkedLists/
+├── LinkedList/
 ├── Trees/
 ├── Graphs/
 ├── DP/
@@ -102,15 +128,18 @@ DSA-Journey/
 
 ---
 
-## 🧠 Key Takeaways
+## 🎯 My DSA Goals
 
-💡 Learning DSA is not about memorizing — it’s about **problem-solving patterns**.
-⚙️ Focused on **writing clean, efficient, and optimal code**.
-🔥 Practicing **daily challenges** to stay consistent.
+* [x] Complete 100+ questions on GeeksforGeeks
+* [x] Solve 150+ problems on LeetCode
+* [ ] Achieve 3⭐ on CodeChef
+* [ ] Master Graph & DP problems
+* [ ] Participate in 10+ coding contests
+* [ ] Create DSA tutorials for others
 
 ---
 
-## 🕹️ Fun GIFs That Describe My Journey
+## 🎞️ Journey in Motion
 
 <p align="center">
   <img src="https://media.giphy.com/media/l41lUJOmGzPbbvQ2s/giphy.gif" width="250" />
@@ -130,8 +159,8 @@ DSA-Journey/
 
 ## 🏁 Final Note
 
-> “DSA isn’t just theory — it’s the foundation of great problem-solving.”
+> “Java and DSA together teach not just how to code — but how to think efficiently.”
 
-⭐ **If this inspires you, give this repo a star!** ⭐
+⭐ **If you found this inspiring, star the repo and follow my DSA journey!** ⭐
 
 ![Thank You](https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif)
